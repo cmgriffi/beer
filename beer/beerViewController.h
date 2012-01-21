@@ -10,4 +10,7 @@
 
 @interface beerViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrolView;
+
+
 @end

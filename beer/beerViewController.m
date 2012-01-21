@@ -9,6 +9,8 @@
 #import "beerViewController.h"
 
 @implementation beerViewController
+@synthesize scrolView;
+// @synthesize picture;  **NOT SURE WHAT THIS IS.. it was giving me erros, so I commented it out and it seems to work now
 
 - (void)didReceiveMemoryWarning
 {
@@ -22,10 +24,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+
+    self.scrolView.contentSize = CGSizeMake(scrolView.frame.size.width*2, self.scrolView.frame.size.height);
+// The above code is somthing to do with the size of the scroll window
+
+
+
 }
 
 - (void)viewDidUnload
 {
+    //[self setPicture:nil];   **NOT SURE WHAT THIS IS.. it was giving me erros, so I commented it out and it seems to work now
+    
+    [self setScrolView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

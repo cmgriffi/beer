@@ -15,6 +15,10 @@
 		F7A4955514CB44D600384DC0 /* beerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A4955414CB44D600384DC0 /* beerAppDelegate.m */; };
 		F7A4955814CB44D600384DC0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A4955614CB44D600384DC0 /* MainStoryboard.storyboard */; };
 		F7A4955B14CB44D600384DC0 /* beerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A4955A14CB44D600384DC0 /* beerViewController.m */; };
+		F7A4957114CB65A800384DC0 /* De_Koninck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957014CB65A800384DC0 /* De_Koninck.jpg */; };
+		F7A4957314CB65EB00384DC0 /* picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957214CB65EB00384DC0 /* picture.jpg */; };
+		F7A4957714CB74E800384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957614CB74E800384DC0 /* Icon-72.png */; };
+		F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957814CB74F300384DC0 /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +26,19 @@
 		F7A4954414CB44D600384DC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7A4954614CB44D600384DC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7A4954814CB44D600384DC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F7A4954C14CB44D600384DC0 /* beer-Info.plist */ = {isa = PBXFileReference; path = "beer-Info.plist"; sourceTree = "<group>"; };
+		F7A4954C14CB44D600384DC0 /* beer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "beer-Info.plist"; sourceTree = "<group>"; };
 		F7A4954E14CB44D600384DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7A4955014CB44D600384DC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F7A4955214CB44D600384DC0 /* beer-Prefix.pch */ = {isa = PBXFileReference; path = "beer-Prefix.pch"; sourceTree = "<group>"; };
-		F7A4955314CB44D600384DC0 /* beerAppDelegate.h */ = {isa = PBXFileReference; path = beerAppDelegate.h; sourceTree = "<group>"; };
+		F7A4955214CB44D600384DC0 /* beer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beer-Prefix.pch"; sourceTree = "<group>"; };
+		F7A4955314CB44D600384DC0 /* beerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = beerAppDelegate.h; sourceTree = "<group>"; };
 		F7A4955414CB44D600384DC0 /* beerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = beerAppDelegate.m; sourceTree = "<group>"; };
 		F7A4955714CB44D600384DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F7A4955914CB44D600384DC0 /* beerViewController.h */ = {isa = PBXFileReference; path = beerViewController.h; sourceTree = "<group>"; };
+		F7A4955914CB44D600384DC0 /* beerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = beerViewController.h; sourceTree = "<group>"; };
 		F7A4955A14CB44D600384DC0 /* beerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = beerViewController.m; sourceTree = "<group>"; };
+		F7A4957014CB65A800384DC0 /* De_Koninck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = De_Koninck.jpg; sourceTree = "<group>"; };
+		F7A4957214CB65EB00384DC0 /* picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture.jpg; sourceTree = "<group>"; };
+		F7A4957614CB74E800384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		F7A4957814CB74F300384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 		F7A4953514CB44D600384DC0 = {
 			isa = PBXGroup;
 			children = (
+				F7A4957814CB74F300384DC0 /* Icon-72.png */,
 				F7A4954A14CB44D600384DC0 /* beer */,
 				F7A4954314CB44D600384DC0 /* Frameworks */,
 				F7A4954114CB44D600384DC0 /* Products */,
@@ -77,6 +86,7 @@
 		F7A4954A14CB44D600384DC0 /* beer */ = {
 			isa = PBXGroup;
 			children = (
+				F7A4956F14CB648100384DC0 /* images */,
 				F7A4955314CB44D600384DC0 /* beerAppDelegate.h */,
 				F7A4955414CB44D600384DC0 /* beerAppDelegate.m */,
 				F7A4955614CB44D600384DC0 /* MainStoryboard.storyboard */,
@@ -96,6 +106,16 @@
 				F7A4955214CB44D600384DC0 /* beer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7A4956F14CB648100384DC0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F7A4957614CB74E800384DC0 /* Icon-72.png */,
+				F7A4957214CB65EB00384DC0 /* picture.jpg */,
+				F7A4957014CB65A800384DC0 /* De_Koninck.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +171,10 @@
 			files = (
 				F7A4954F14CB44D600384DC0 /* InfoPlist.strings in Resources */,
 				F7A4955814CB44D600384DC0 /* MainStoryboard.storyboard in Resources */,
+				F7A4957114CB65A800384DC0 /* De_Koninck.jpg in Resources */,
+				F7A4957314CB65EB00384DC0 /* picture.jpg in Resources */,
+				F7A4957714CB74E800384DC0 /* Icon-72.png in Resources */,
+				F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +301,7 @@
 				F7A4956014CB44D600384DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
