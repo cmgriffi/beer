@@ -7,10 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Twitter/Twitter.h>
 
 @interface beerViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrolView;
+
+
+
+
+
+// tweet button
+
+- (IBAction)tweetButton:(id)sender;
+
+//tweet button
+
+
 
 
 @end

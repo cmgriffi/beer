@@ -69,4 +69,44 @@
     return YES;
 }
 
+// semding tweets with tweet button
+
+- (IBAction)tweetButton:(id)sender {
+    
+    
+    if ([TWTweetComposeViewController canSendTweet]) {
+        TWTweetComposeViewController *tweetComposer = [[TWTweetComposeViewController alloc] 
+                                                       init];
+        
+        [tweetComposer setInitialText:@"...mybrinback"];
+        [self presentModalViewController:tweetComposer animated:YES];
+    }
+    
+    else {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error" message:@"unable to send tweet." 
+                                  delegate:self cancelButtonTitle:@"OK" otherButtonTitles:
+                                  nil];
+        [alertView show];
+    }
+    
+// sending tweets with tweet button
+    
+}
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

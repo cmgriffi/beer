@@ -19,6 +19,8 @@
 		F7A4957314CB65EB00384DC0 /* picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957214CB65EB00384DC0 /* picture.jpg */; };
 		F7A4957714CB74E800384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957614CB74E800384DC0 /* Icon-72.png */; };
 		F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957814CB74F300384DC0 /* Icon-72.png */; };
+		F7EC623714CBAE230059A3AB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EC623614CBAE230059A3AB /* Twitter.framework */; };
+		F7EC623914CBAE9B0059A3AB /* twitter-tips1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		F7A4957214CB65EB00384DC0 /* picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture.jpg; sourceTree = "<group>"; };
 		F7A4957614CB74E800384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		F7A4957814CB74F300384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		F7EC623614CBAE230059A3AB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-tips1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EC623714CBAE230059A3AB /* Twitter.framework in Frameworks */,
 				F7A4954514CB44D600384DC0 /* UIKit.framework in Frameworks */,
 				F7A4954714CB44D600384DC0 /* Foundation.framework in Frameworks */,
 				F7A4954914CB44D600384DC0 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +81,7 @@
 		F7A4954314CB44D600384DC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7EC623614CBAE230059A3AB /* Twitter.framework */,
 				F7A4954414CB44D600384DC0 /* UIKit.framework */,
 				F7A4954614CB44D600384DC0 /* Foundation.framework */,
 				F7A4954814CB44D600384DC0 /* CoreGraphics.framework */,
@@ -111,6 +117,7 @@
 		F7A4956F14CB648100384DC0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */,
 				F7A4957614CB74E800384DC0 /* Icon-72.png */,
 				F7A4957214CB65EB00384DC0 /* picture.jpg */,
 				F7A4957014CB65A800384DC0 /* De_Koninck.jpg */,
@@ -175,6 +182,7 @@
 				F7A4957314CB65EB00384DC0 /* picture.jpg in Resources */,
 				F7A4957714CB74E800384DC0 /* Icon-72.png in Resources */,
 				F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */,
+				F7EC623914CBAE9B0059A3AB /* twitter-tips1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
