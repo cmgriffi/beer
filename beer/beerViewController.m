@@ -78,7 +78,7 @@
         TWTweetComposeViewController *tweetComposer = [[TWTweetComposeViewController alloc] 
                                                        init];
         
-        [tweetComposer setInitialText:@"...mybrinback"];
+        [tweetComposer setInitialText:@"This is my new favorite app!"];
         [self presentModalViewController:tweetComposer animated:YES];
     }
     
