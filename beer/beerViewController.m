@@ -9,6 +9,7 @@
 #import "beerViewController.h"
 
 @implementation beerViewController
+@synthesize webPage;
 @synthesize scrolView;
 // @synthesize picture;  **NOT SURE WHAT THIS IS.. it was giving me erros, so I commented it out and it seems to work now
 
@@ -22,12 +23,22 @@
 
 - (void)viewDidLoad
 {
+    
+    //This is the code for launching the web page
+    [webPage loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://twitter.com/#!/search/beer"]]];
+    
+    //This is the code for launching the web page
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
 
+// This code controls the scrolling of the pictures in the top left
+    
     self.scrolView.contentSize = CGSizeMake(scrolView.frame.size.width*2, self.scrolView.frame.size.height);
-// The above code is somthing to do with the size of the scroll window
+// This code controls the scrolling of the pictures in the top left
 
 
 
@@ -38,6 +49,8 @@
     //[self setPicture:nil];   **NOT SURE WHAT THIS IS.. it was giving me erros, so I commented it out and it seems to work now
     
     [self setScrolView:nil];
+    [self setWebPage:nil];
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

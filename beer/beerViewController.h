@@ -25,5 +25,12 @@
 
 
 
+//web page
+@property (weak, nonatomic) IBOutlet UIWebView *webPage;
+//web page
+
+
+
+
 
 @end
