@@ -7,8 +7,6 @@
 //
 
 
-I AM BREAKING THE APP
-
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
