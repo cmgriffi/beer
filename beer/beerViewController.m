@@ -7,6 +7,7 @@
 //
 
 #import "beerViewController.h"
+#import "beerAppDelegate.h"
 
 @implementation beerViewController
 @synthesize webPage;
@@ -30,6 +31,17 @@
     //This is the code for launching the web page
     
     
+// This is sample code the saves data to parse.com DB - Code is functional but does nothing in the app    
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"Chris" forKey:@"Name"];
+    [testObject save]; 
+    
+// This is sample code the saves data to parse.com DB - Code is functional but does nothing in the app   
+    
+    
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -40,6 +52,8 @@
     self.scrolView.contentSize = CGSizeMake(scrolView.frame.size.width*2, self.scrolView.frame.size.height);
 // This code controls the scrolling of the pictures in the top left
 
+    
+    
 
 
 }
