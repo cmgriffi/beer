@@ -28,6 +28,7 @@
 		F7A4957314CB65EB00384DC0 /* picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957214CB65EB00384DC0 /* picture.jpg */; };
 		F7A4957714CB74E800384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957614CB74E800384DC0 /* Icon-72.png */; };
 		F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957814CB74F300384DC0 /* Icon-72.png */; };
+		F7C563F714D4EBBE00B4E4BE /* secondpage.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C563F614D4EBBE00B4E4BE /* secondpage.m */; };
 		F7EC623714CBAE230059A3AB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EC623614CBAE230059A3AB /* Twitter.framework */; };
 		F7EC623914CBAE9B0059A3AB /* twitter-tips1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,8 @@
 		F7A4957214CB65EB00384DC0 /* picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture.jpg; sourceTree = "<group>"; };
 		F7A4957614CB74E800384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		F7A4957814CB74F300384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		F7C563F514D4EBBE00B4E4BE /* secondpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondpage.h; sourceTree = "<group>"; };
+		F7C563F614D4EBBE00B4E4BE /* secondpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondpage.m; sourceTree = "<group>"; };
 		F7EC623614CBAE230059A3AB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-tips1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +133,8 @@
 				F7A4955314CB44D600384DC0 /* beerAppDelegate.h */,
 				F7A4955414CB44D600384DC0 /* beerAppDelegate.m */,
 				F7A4955614CB44D600384DC0 /* MainStoryboard.storyboard */,
+				F7C563F514D4EBBE00B4E4BE /* secondpage.h */,
+				F7C563F614D4EBBE00B4E4BE /* secondpage.m */,
 				F7A4955914CB44D600384DC0 /* beerViewController.h */,
 				F7A4955A14CB44D600384DC0 /* beerViewController.m */,
 				F7A4954B14CB44D600384DC0 /* Supporting Files */,
@@ -232,6 +237,7 @@
 				F7A4955114CB44D600384DC0 /* main.m in Sources */,
 				F7A4955514CB44D600384DC0 /* beerAppDelegate.m in Sources */,
 				F7A4955B14CB44D600384DC0 /* beerViewController.m in Sources */,
+				F7C563F714D4EBBE00B4E4BE /* secondpage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

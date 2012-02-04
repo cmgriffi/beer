@@ -9,7 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <Twitter/Twitter.h>
 
-@interface beerViewController : UIViewController
+@interface beerViewController : UIViewController {
+    IBOutlet UITextField *textfield;
+    
+    
+}
+
+-(IBAction)settext;
+
+
+
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrolView;
 
