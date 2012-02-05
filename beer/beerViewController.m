@@ -9,27 +9,9 @@
 #import "beerViewController.h"
 #import "beerAppDelegate.h"
 
-@implementation beerViewController
-@synthesize webPage;
+@implementation beerViewController;
 @synthesize scrolView;
 // @synthesize picture;  **NOT SURE WHAT THIS IS.. it was giving me erros, so I commented it out and it seems to work now
-
-
--(IBAction)settext {
-    PFObject *userlist = [PFObject objectWithClassName:@"userlist"];
-    [userlist setObject:(textfield.text) forKey:@"FirstName"];
-    [userlist setObject:@"Griffith" forKey:@"LastName"];
-    [userlist setObject:@"1087 college ave" forKey:@"StreetAddress"];
-    [userlist setObject:@"Menlo Park" forKey:@"City"];
-    [userlist setObject:@"CA" forKey:@"State"];
-    [userlist setObject:@"94025" forKey:@"ZipCode"];
-    [userlist save];   
-}
-
-
-
-
-
 
 
 
@@ -44,10 +26,9 @@
 - (void)viewDidLoad
 {
     
-    //This is the code for launching the web page
-    [webPage loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://twitter.com/#!/search/beer"]]];
-    
-    //This is the code for launching the web page
+    // Add logout navigation bar button
+    UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleBordered target:self action:@selector(logoutButtonTouchHandler:)];
+    [self.navigationItem setLeftBarButtonItem:logoutButton];
     
     
     
@@ -102,7 +83,6 @@
     
     
     [self setScrolView:nil];
-    [self setWebPage:nil];
     
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -159,6 +139,20 @@
 // sending tweets with tweet button
     
 }
+
+#pragma mark - Logout method
+
+- (void)logoutButtonTouchHandler:(id)sender 
+{
+    // Logout user, this automatically clears the cache
+    [PFUser logOut];
+    
+     //Return to login view controller
+    [self.navigationController popToRootViewControllerAnimated:YES];    
+}
+
+
+
 @end
 
 

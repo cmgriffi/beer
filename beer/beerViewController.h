@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Twitter/Twitter.h>
+#import "Parse/Parse.h"
 
-@interface beerViewController : UIViewController {
-    IBOutlet UITextField *textfield;
-    
-    
-}
-
--(IBAction)settext;
+@interface beerViewController : UIViewController <PF_FBRequestDelegate, NSURLConnectionDelegate>
 
 
 
@@ -33,10 +28,7 @@
 //tweet button
 
 
-
-//web page
-@property (weak, nonatomic) IBOutlet UIWebView *webPage;
-//web page
+- (void)logoutButtonTouchHandler:(id)sender;
 
 
 

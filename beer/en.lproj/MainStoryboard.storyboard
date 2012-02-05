@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Cjq-SH-PLC">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -8,14 +8,14 @@
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="beerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="beerview" id="2" customClass="beerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="bw9-hM-ybW">
-                                <rect key="frame" x="20" y="20" width="302" height="461"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="20" y="20" width="302" height="481"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="picture.jpg" id="gXH-Kg-2Rq">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="461"/>
@@ -42,11 +42,6 @@
                                     <action selector="tweetButton:" destination="2" eventType="touchUpInside" id="7Qt-LS-CHP"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" id="M80-28-IyY">
-                                <rect key="frame" x="51" y="578" width="271" height="351"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hJP-2u-EJM">
                                 <rect key="frame" x="563" y="865" width="100" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,11 +57,107 @@
                                     <segue destination="21t-T0-9Gw" kind="modal" identifier="BeerCatalog" modalTransitionStyle="flipHorizontal" id="lGN-1q-y3u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QZv-mY-6Ml">
-                                <rect key="frame" x="442" y="259" width="78" height="37"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6vf-KM-I5e"/>
+                    <connections>
+                        <outlet property="scrolView" destination="bw9-hM-ybW" id="LVy-3I-Vin"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2441" y="-226"/>
+        </scene>
+        <scene sceneID="U1o-1e-H5Q">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tK-aS-qWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="Cjq-SH-PLC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackTranslucent" id="aQw-5e-2Il">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XkC-HD-MgU" kind="relationship" relationship="rootViewController" id="aJB-eW-36U"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="124" y="-239"/>
+        </scene>
+        <scene sceneID="LXA-ht-oqg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BwP-Gy-jrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="XkC-HD-MgU" customClass="loginpage" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uoi-Ri-c0E">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ipad-background.png" id="uiv-C7-E85">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" id="QGE-re-q2B">
+                                <rect key="frame" x="230" y="340" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" id="LIz-AZ-kHJ">
+                                <rect key="frame" x="230" y="418" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" id="mF9-PL-wPF">
+                                <rect key="frame" x="230" y="496" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.98431378602981567" blue="0.98431378602981567" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zipcode" minimumFontSize="17" id="Tgu-Oy-OfR">
+                                <rect key="frame" x="230" y="535" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="fVn-vT-TSb">
+                                <rect key="frame" x="230" y="379" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fist Name" minimumFontSize="17" clearButtonMode="whileEditing" id="DaI-co-0w8">
+                                <rect key="frame" x="230" y="301" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9YL-E9-nhZ">
+                                <rect key="frame" x="337" y="580" width="120" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="LOGIN" image="BelgianHoliday_Badge.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="XkC-HD-MgU" eventType="touchUpInside" id="65h-uo-vKS"/>
+                                    <segue destination="2" kind="modal" identifier="" id="oRb-dB-fZ2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" id="P63-8B-Ps4">
+                                <rect key="frame" x="230" y="457" width="334" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5cI-Bc-GHy">
+                                <rect key="frame" x="299" y="740" width="196" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="set text">
+                                <state key="normal" title="fb" image="LoginWithFacebookNormal@2x.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -74,26 +165,26 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="settext" destination="2" eventType="touchUpInside" id="ANx-Bt-yYJ"/>
+                                    <action selector="loginButtonTouchHandler:" destination="XkC-HD-MgU" eventType="touchUpInside" id="frO-d2-jbE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="predefined" borderStyle="roundedRect" minimumFontSize="17" id="iXq-xa-nEF">
-                                <rect key="frame" x="442" y="215" width="200" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="h1G-K0-7ax"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
-                        <outlet property="scrolView" destination="bw9-hM-ybW" id="LVy-3I-Vin"/>
-                        <outlet property="textfield" destination="iXq-xa-nEF" id="lW5-G6-nGu"/>
-                        <outlet property="webPage" destination="M80-28-IyY" id="lm0-HX-s1q"/>
+                        <outlet property="address" destination="LIz-AZ-kHJ" id="o0D-cj-ezb"/>
+                        <outlet property="city" destination="P63-8B-Ps4" id="hAW-CL-Qu0"/>
+                        <outlet property="firstname" destination="DaI-co-0w8" id="x4N-Tt-1Sh"/>
+                        <outlet property="lastname" destination="QGE-re-q2B" id="pvG-EC-5mp"/>
+                        <outlet property="password" destination="fVn-vT-TSb" id="6Xb-zQ-jBm"/>
+                        <outlet property="state" destination="mF9-PL-wPF" id="xMH-8a-3KM"/>
+                        <outlet property="zipcode" destination="Tgu-Oy-OfR" id="0Wc-Q1-OF9"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2469" y="102"/>
+            <point key="canvasLocation" x="1176" y="-234"/>
         </scene>
         <scene sceneID="mLH-Hs-2D7">
             <objects>
@@ -127,12 +218,15 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2458" y="1341"/>
+            <point key="canvasLocation" x="2418" y="969"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BelgianHoliday_Badge.png" width="800" height="800"/>
         <image name="De_Koninck.jpg" width="2137" height="2968"/>
+        <image name="LoginWithFacebookNormal@2x.png" width="318" height="58"/>
         <image name="Screen Shot 2012-01-22 at 4.02.10 PM.png" width="341" height="287"/>
+        <image name="ipad-background.png" width="1024" height="1024"/>
         <image name="picture.jpg" width="1202" height="1285"/>
         <image name="twitter-tips1.png" width="300" height="300"/>
     </resources>
@@ -140,14 +234,24 @@
         <class className="beerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/beerViewController.h"/>
             <relationships>
-                <relationship kind="action" name="load"/>
-                <relationship kind="action" name="save"/>
-                <relationship kind="action" name="settext"/>
+                <relationship kind="action" name="logoutButtonTouchHandler:"/>
                 <relationship kind="action" name="tweetButton:"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scrolView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="textfield" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="webPage" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="loginpage" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/loginpage.h"/>
+            <relationships>
+                <relationship kind="action" name="login"/>
+                <relationship kind="action" name="loginButtonTouchHandler:"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="address" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="city" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="firstname" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lastname" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="state" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="zipcode" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="secondpage" superclassName="UIViewController">
@@ -159,4 +263,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="oRb-dB-fZ2"/>
+    </inferredMetricsTieBreakers>
 </document>

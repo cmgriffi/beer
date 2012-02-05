@@ -14,9 +14,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+   
+    
+    // This is the key info for parse.com
+    [Parse setApplicationId:@"vzgdhTdNRBcaT5WDsQM7rz2OyAHAGbwLfdxz4lap" 
+                  clientKey:@"bozaqLkwN8dSsSMRRLtM9WyN1ouHlVzaCzhCQjki"];
+    // This is the key info for parse.com   
+    
+    //facebookid
+    
+     [Parse setFacebookApplicationId:@"232190216866063"];
+    
+    
+     // Override point for customization after application launch.
+    //self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[UIViewController alloc] init]];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //[self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+// ****************************************************************************
+// App switching methods to support Facebook Single Sign-On
+// ****************************************************************************
+
+// Pre 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [[PFUser facebook] handleOpenURL:url]; 
+}
+
+// For 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [[PFUser facebook] handleOpenURL:url]; 
+} 
+
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F72BBE4914CCDB66005EA3A1 /* Screen Shot 2012-01-22 at 4.02.10 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = F72BBE4814CCDB66005EA3A1 /* Screen Shot 2012-01-22 at 4.02.10 PM.png */; };
+		F75F3AEB14DD8B4C00D99205 /* loginpage.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F3AEA14DD8B4C00D99205 /* loginpage.m */; };
 		F777361C14D463ED00B39829 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F777361B14D463ED00B39829 /* Parse.framework */; };
 		F777361F14D4643000B39829 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F777361E14D4643000B39829 /* AudioToolbox.framework */; };
 		F777362114D4643D00B39829 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F777362014D4643D00B39829 /* CFNetwork.framework */; };
@@ -29,12 +30,18 @@
 		F7A4957714CB74E800384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957614CB74E800384DC0 /* Icon-72.png */; };
 		F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A4957814CB74F300384DC0 /* Icon-72.png */; };
 		F7C563F714D4EBBE00B4E4BE /* secondpage.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C563F614D4EBBE00B4E4BE /* secondpage.m */; };
+		F7DE206C14DDAFFA005A15BA /* ipad-background.png in Resources */ = {isa = PBXBuildFile; fileRef = F7DE206B14DDAFFA005A15BA /* ipad-background.png */; };
+		F7DE207214DDB4F1005A15BA /* BelgianHoliday_Badge.png in Resources */ = {isa = PBXBuildFile; fileRef = F7DE207114DDB4F1005A15BA /* BelgianHoliday_Badge.png */; };
+		F7E086B614DEFBFC00E33AF8 /* LogoutNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E086B514DEFBFC00E33AF8 /* LogoutNormal.png */; };
 		F7EC623714CBAE230059A3AB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EC623614CBAE230059A3AB /* Twitter.framework */; };
 		F7EC623914CBAE9B0059A3AB /* twitter-tips1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */; };
+		F7F42E4914DE11DC00FDE397 /* LoginWithFacebookNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F42E4814DE11DC00FDE397 /* LoginWithFacebookNormal@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F72BBE4814CCDB66005EA3A1 /* Screen Shot 2012-01-22 at 4.02.10 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2012-01-22 at 4.02.10 PM.png"; sourceTree = "<group>"; };
+		F75F3AE914DD8B4C00D99205 /* loginpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginpage.h; sourceTree = "<group>"; };
+		F75F3AEA14DD8B4C00D99205 /* loginpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginpage.m; sourceTree = "<group>"; };
 		F777361B14D463ED00B39829 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F777361E14D4643000B39829 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F777362014D4643D00B39829 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -62,8 +69,12 @@
 		F7A4957814CB74F300384DC0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		F7C563F514D4EBBE00B4E4BE /* secondpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondpage.h; sourceTree = "<group>"; };
 		F7C563F614D4EBBE00B4E4BE /* secondpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondpage.m; sourceTree = "<group>"; };
+		F7DE206B14DDAFFA005A15BA /* ipad-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-background.png"; sourceTree = "<group>"; };
+		F7DE207114DDB4F1005A15BA /* BelgianHoliday_Badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BelgianHoliday_Badge.png; sourceTree = "<group>"; };
+		F7E086B514DEFBFC00E33AF8 /* LogoutNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoutNormal.png; sourceTree = "<group>"; };
 		F7EC623614CBAE230059A3AB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-tips1.png"; sourceTree = "<group>"; };
+		F7F42E4814DE11DC00FDE397 /* LoginWithFacebookNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginWithFacebookNormal@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +146,8 @@
 				F7A4955614CB44D600384DC0 /* MainStoryboard.storyboard */,
 				F7C563F514D4EBBE00B4E4BE /* secondpage.h */,
 				F7C563F614D4EBBE00B4E4BE /* secondpage.m */,
+				F75F3AE914DD8B4C00D99205 /* loginpage.h */,
+				F75F3AEA14DD8B4C00D99205 /* loginpage.m */,
 				F7A4955914CB44D600384DC0 /* beerViewController.h */,
 				F7A4955A14CB44D600384DC0 /* beerViewController.m */,
 				F7A4954B14CB44D600384DC0 /* Supporting Files */,
@@ -157,9 +170,13 @@
 			isa = PBXGroup;
 			children = (
 				F7EC623814CBAE9B0059A3AB /* twitter-tips1.png */,
+				F7E086B514DEFBFC00E33AF8 /* LogoutNormal.png */,
 				F72BBE4814CCDB66005EA3A1 /* Screen Shot 2012-01-22 at 4.02.10 PM.png */,
+				F7DE207114DDB4F1005A15BA /* BelgianHoliday_Badge.png */,
 				F7A4957614CB74E800384DC0 /* Icon-72.png */,
 				F7A4957214CB65EB00384DC0 /* picture.jpg */,
+				F7F42E4814DE11DC00FDE397 /* LoginWithFacebookNormal@2x.png */,
+				F7DE206B14DDAFFA005A15BA /* ipad-background.png */,
 				F7A4957014CB65A800384DC0 /* De_Koninck.jpg */,
 			);
 			name = images;
@@ -224,6 +241,10 @@
 				F7A4957914CB74F300384DC0 /* Icon-72.png in Resources */,
 				F7EC623914CBAE9B0059A3AB /* twitter-tips1.png in Resources */,
 				F72BBE4914CCDB66005EA3A1 /* Screen Shot 2012-01-22 at 4.02.10 PM.png in Resources */,
+				F7DE206C14DDAFFA005A15BA /* ipad-background.png in Resources */,
+				F7DE207214DDB4F1005A15BA /* BelgianHoliday_Badge.png in Resources */,
+				F7F42E4914DE11DC00FDE397 /* LoginWithFacebookNormal@2x.png in Resources */,
+				F7E086B614DEFBFC00E33AF8 /* LogoutNormal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +259,7 @@
 				F7A4955514CB44D600384DC0 /* beerAppDelegate.m in Sources */,
 				F7A4955B14CB44D600384DC0 /* beerViewController.m in Sources */,
 				F7C563F714D4EBBE00B4E4BE /* secondpage.m in Sources */,
+				F75F3AEB14DD8B4C00D99205 /* loginpage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

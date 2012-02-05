@@ -7,6 +7,10 @@
 //
 
 
+#import <UIKit/UIKit.h>
+
+
 @interface secondpage : UIViewController
+
 
 @end
