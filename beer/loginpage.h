@@ -22,13 +22,16 @@
     
 }
 
-@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
+//@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 
 -(IBAction)login;
 
 
 
+
 -(IBAction)loginButtonTouchHandler:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *shadowtest;
 
 @end

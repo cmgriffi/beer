@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Cjq-SH-PLC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Cjq-SH-PLC">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
+        <!--Beer View Controller-->
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -13,11 +15,15 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ipad-background.png" id="4SG-Tw-sWT">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="bw9-hM-ybW">
                                 <rect key="frame" x="20" y="20" width="302" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="picture.jpg" id="gXH-Kg-2Rq">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="st_bernardus_abt_12_33cl.png" id="gXH-Kg-2Rq">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="461"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -28,10 +34,10 @@
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxx-ut-B8v">
-                                <rect key="frame" x="20" y="937" width="54" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="909" width="80" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="twitter-tips1.png">
+                                <state key="normal" image="Twitter_bird_icon2.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,11 +48,56 @@
                                     <action selector="tweetButton:" destination="2" eventType="touchUpInside" id="7Qt-LS-CHP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hJP-2u-EJM">
-                                <rect key="frame" x="563" y="865" width="100" height="37"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="label" lineBreakMode="tailTruncation" minimumFontSize="10" id="F89-4b-UZK">
+                                <rect key="frame" x="430" y="537" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="RXy-4A-sgk">
+                                <rect key="frame" x="527" y="537" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="hHM-VF-Dpw">
+                                <rect key="frame" x="614" y="537" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="kY8-Hc-bzD">
+                                <rect key="frame" x="691" y="537" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DIO-Ia-MOz">
+                                <rect key="frame" x="520" y="475" width="57" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="thumbsup.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="likerate:" destination="2" eventType="touchUpInside" id="XHv-pY-oXD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HTS-de-DxD">
+                                <rect key="frame" x="599" y="475" width="72" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="past beers">
+                                <state key="normal" image="thumbside.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,7 +105,52 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="21t-T0-9Gw" kind="modal" identifier="BeerCatalog" modalTransitionStyle="flipHorizontal" id="lGN-1q-y3u"/>
+                                    <action selector="mehrate:" destination="2" eventType="touchUpInside" id="Icf-oW-QW6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1HR-V2-I4n">
+                                <rect key="frame" x="676" y="468" width="72" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="thumbsdown.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="haterate:" destination="2" eventType="touchUpInside" id="ba6-Hu-w47"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5qO-U2-ggu">
+                                <rect key="frame" x="423" y="488" width="57" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="heart.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loverate:" destination="2" eventType="touchUpInside" id="cdo-mr-wiT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ccT-pw-gXz">
+                                <rect key="frame" x="632" y="861" width="101" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="the beer store.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beermenu:" destination="2" eventType="touchUpInside" id="Acw-gT-qBQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,12 +158,200 @@
                     </view>
                     <navigationItem key="navigationItem" id="6vf-KM-I5e"/>
                     <connections>
+                        <outlet property="BeerBackground2" destination="4SG-Tw-sWT" id="wbZ-ZY-cUe"/>
+                        <outlet property="count" destination="F89-4b-UZK" id="2hY-US-7cj"/>
+                        <outlet property="hatecount" destination="kY8-Hc-bzD" id="IrP-SB-o6k"/>
+                        <outlet property="likecount" destination="RXy-4A-sgk" id="ulp-qZ-YW9"/>
+                        <outlet property="mehcount" destination="hHM-VF-Dpw" id="lmd-pB-5Fu"/>
                         <outlet property="scrolView" destination="bw9-hM-ybW" id="LVy-3I-Vin"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2441" y="-226"/>
+            <point key="canvasLocation" x="4217" y="-834"/>
         </scene>
+        <!--My Table Controller - Beer Store-->
+        <scene sceneID="Xkb-7g-Ed5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYU-uJ-5VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="beertable" title="Beer Store" id="fIB-LC-nVr" customClass="MyTableController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ivu-Jh-ga2">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" id="bVo-X8-Inh">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fIB-LC-nVr" id="lbv-db-rce"/>
+                            <outlet property="delegate" destination="fIB-LC-nVr" id="SJb-Iy-W7C"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="3946" y="358"/>
+        </scene>
+        <!--Bought View Controller - Beer Store-->
+        <scene sceneID="69R-DP-aOp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lW3-FV-0Zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="beerbought" title="Beer Store" id="x83-pu-2jB" customClass="boughtViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k7X-zf-8gz">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ipad-background.png" id="pEc-Wp-Iiq">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THANK YOU FOR YOUR PURCHASE! YOUR BEER IS ON ITS WAY!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Jwl-lD-5th">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="BeerBackground" destination="pEc-Wp-Iiq" id="dLU-iy-zGm"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4819" y="377"/>
+        </scene>
+        <!--Logindata-->
+        <scene sceneID="eZt-pL-pdT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnu-yG-rho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="logindata" id="UL4-YX-xq2" customClass="logindata" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kfV-jB-Rez">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ipad-background.png" id="pVT-c9-mAP">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1012"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cardboard-texture.jpg" id="1NJ-hC-nPA">
+                                <rect key="frame" x="82" y="134" width="611" height="585"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="NAME" minimumFontSize="17" id="H3o-dU-SOD">
+                                <rect key="frame" x="82" y="250" width="611" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="GENDER" minimumFontSize="17" id="s6e-uP-zSg">
+                                <rect key="frame" x="82" y="310" width="611" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="BIRTHDATE" minimumFontSize="17" id="v7H-Oi-VVe">
+                                <rect key="frame" x="82" y="368" width="611" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s4r-K7-NQP">
+                                <rect key="frame" x="266" y="709" width="253" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="beership.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginbutton:" destination="UL4-YX-xq2" eventType="touchUpInside" id="ymd-2T-jrd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="STREET ADDRESS" minimumFontSize="17" id="Xs8-Mk-j4q">
+                                <rect key="frame" x="82" y="426" width="611" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="CITY" minimumFontSize="17" id="loh-mh-V9K">
+                                <rect key="frame" x="82" y="483" width="611" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="STATE" minimumFontSize="17" id="3ie-eH-xAe">
+                                <rect key="frame" x="82" y="541" width="310" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="ZIP" minimumFontSize="17" id="O8r-Y8-cwv">
+                                <rect key="frame" x="390" y="541" width="303" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="EMAIL" minimumFontSize="17" id="Zwk-4o-hgM">
+                                <rect key="frame" x="82" y="601" width="611" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ga4-AC-XVB">
+                                <rect key="frame" x="627" y="914" width="141" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="login_button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signinbutton:" destination="UL4-YX-xq2" eventType="touchUpInside" id="HaZ-Ga-haD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TELL US WHERE TO SHIP YOUR BEER!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="2gj-MS-Wd6">
+                                <rect key="frame" x="82" y="134" width="599" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ieh-Yc-DnY"/>
+                    <connections>
+                        <outlet property="BeerBackground" destination="pVT-c9-mAP" id="Xbo-Ks-she"/>
+                        <outlet property="ShippingScreen" destination="1NJ-hC-nPA" id="NJz-F1-3Uz"/>
+                        <outlet property="birthdayfromfacebook" destination="v7H-Oi-VVe" id="8Bf-kq-oVZ"/>
+                        <outlet property="city" destination="loh-mh-V9K" id="xLy-qA-r5G"/>
+                        <outlet property="email" destination="Zwk-4o-hgM" id="mWF-Ty-Udg"/>
+                        <outlet property="genderfromfacebook" destination="s6e-uP-zSg" id="1gp-hS-9za"/>
+                        <outlet property="namefromfacebook" destination="H3o-dU-SOD" id="HQg-kN-6Q2"/>
+                        <outlet property="state" destination="3ie-eH-xAe" id="fbn-hM-bVB"/>
+                        <outlet property="streetaddress" destination="Xs8-Mk-j4q" id="cUy-ca-kNz"/>
+                        <outlet property="zipcode" destination="O8r-Y8-cwv" id="mVu-jz-R5X"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3193" y="-879"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="U1o-1e-H5Q">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tK-aS-qWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,8 +364,9 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="124" y="-239"/>
+            <point key="canvasLocation" x="1068" y="-931"/>
         </scene>
+        <!--Loginpage-->
         <scene sceneID="LXA-ht-oqg">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwP-Gy-jrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,6 +378,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ipad-background.png" id="uiv-C7-E85">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ios-linen.png" id="kwr-Oc-o5y">
+                                <rect key="frame" x="193" y="260" width="414" height="428"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" id="QGE-re-q2B">
                                 <rect key="frame" x="230" y="340" width="334" height="31"/>
@@ -144,7 +433,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login" destination="XkC-HD-MgU" eventType="touchUpInside" id="65h-uo-vKS"/>
-                                    <segue destination="2" kind="modal" identifier="" id="oRb-dB-fZ2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" id="P63-8B-Ps4">
@@ -168,75 +456,95 @@
                                     <action selector="loginButtonTouchHandler:" destination="XkC-HD-MgU" eventType="touchUpInside" id="frO-d2-jbE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UNIQUE BEER SENT TO YOUR DOOR EACH WEEK!" lineBreakMode="tailTruncation" minimumFontSize="10" id="1wZ-2M-6lZ">
+                                <rect key="frame" x="0.0" y="178" width="856" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="h1G-K0-7ax"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
                         <outlet property="address" destination="LIz-AZ-kHJ" id="o0D-cj-ezb"/>
                         <outlet property="city" destination="P63-8B-Ps4" id="hAW-CL-Qu0"/>
                         <outlet property="firstname" destination="DaI-co-0w8" id="x4N-Tt-1Sh"/>
                         <outlet property="lastname" destination="QGE-re-q2B" id="pvG-EC-5mp"/>
                         <outlet property="password" destination="fVn-vT-TSb" id="6Xb-zQ-jBm"/>
+                        <outlet property="shadowtest" destination="kwr-Oc-o5y" id="gFY-S7-1UA"/>
                         <outlet property="state" destination="mF9-PL-wPF" id="xMH-8a-3KM"/>
                         <outlet property="zipcode" destination="Tgu-Oy-OfR" id="0Wc-Q1-OF9"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1176" y="-234"/>
-        </scene>
-        <scene sceneID="mLH-Hs-2D7">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CxF-YQ-b9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="21t-T0-9Gw" customClass="secondpage" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Me7-0L-ryH">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pqv-eN-MVu">
-                                <rect key="frame" x="515" y="99" width="116" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="this month">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2" kind="modal" identifier="BackToMain" modalTransitionStyle="flipHorizontal" id="Cqz-8e-wRs"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="De_Koninck.jpg" id="NNc-RZ-KbR">
-                                <rect key="frame" x="50" y="131" width="302" height="461"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2418" y="969"/>
+            <point key="canvasLocation" x="2140" y="-910"/>
         </scene>
     </scenes>
     <resources>
         <image name="BelgianHoliday_Badge.png" width="800" height="800"/>
-        <image name="De_Koninck.jpg" width="2137" height="2968"/>
         <image name="LoginWithFacebookNormal@2x.png" width="318" height="58"/>
         <image name="Screen Shot 2012-01-22 at 4.02.10 PM.png" width="341" height="287"/>
+        <image name="Twitter_bird_icon2.png" width="300" height="213"/>
+        <image name="beership.png" width="1300" height="1300"/>
+        <image name="cardboard-texture.jpg" width="3888" height="2592"/>
+        <image name="heart.png" width="600" height="563"/>
+        <image name="ios-linen.png" width="1250" height="1076"/>
         <image name="ipad-background.png" width="1024" height="1024"/>
-        <image name="picture.jpg" width="1202" height="1285"/>
-        <image name="twitter-tips1.png" width="300" height="300"/>
+        <image name="login_button.png" width="256" height="140"/>
+        <image name="st_bernardus_abt_12_33cl.png" width="198" height="274"/>
+        <image name="the beer store.jpg" width="1350" height="1487"/>
+        <image name="thumbsdown.png" width="314" height="283"/>
+        <image name="thumbside.png" width="599" height="463"/>
+        <image name="thumbsup.png" width="463" height="599"/>
     </resources>
     <classes>
+        <class className="MyTableController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyTableController.h"/>
+        </class>
+        <class className="PFQueryTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFQueryTableViewController.h"/>
+        </class>
         <class className="beerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/beerViewController.h"/>
             <relationships>
-                <relationship kind="action" name="logoutButtonTouchHandler:"/>
+                <relationship kind="action" name="beermenu:"/>
+                <relationship kind="action" name="graphbutton:"/>
+                <relationship kind="action" name="haterate:"/>
+                <relationship kind="action" name="likerate:"/>
+                <relationship kind="action" name="loverate:"/>
+                <relationship kind="action" name="mehrate:"/>
                 <relationship kind="action" name="tweetButton:"/>
+                <relationship kind="outlet" name="BeerBackground2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="count" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hatecount" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="likecount" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mehcount" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scrolView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="boughtViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/boughtViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="BeerBackground" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="logindata" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/logindata.h"/>
+            <relationships>
+                <relationship kind="action" name="loginbutton:"/>
+                <relationship kind="action" name="signinbutton:"/>
+                <relationship kind="outlet" name="BeerBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ShippingScreen" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="birthdayfromfacebook" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="city" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="genderfromfacebook" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="namefromfacebook" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="state" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="streetaddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="zipcode" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="loginpage" superclassName="UIViewController">
@@ -244,18 +552,15 @@
             <relationships>
                 <relationship kind="action" name="login"/>
                 <relationship kind="action" name="loginButtonTouchHandler:"/>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="address" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="city" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="firstname" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="lastname" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="shadowtest" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="state" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="zipcode" candidateClass="UITextField"/>
             </relationships>
-        </class>
-        <class className="secondpage" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/secondpage.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -263,7 +568,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="oRb-dB-fZ2"/>
-    </inferredMetricsTieBreakers>
 </document>

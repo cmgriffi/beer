@@ -9,8 +9,6 @@
 
 
 #import <UIKit/UIKit.h>
-
-
 #import "beerAppDelegate.h"
 
 int main(int argc, char *argv[])

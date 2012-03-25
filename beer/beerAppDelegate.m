@@ -7,14 +7,29 @@
 //
 
 #import "beerAppDelegate.h"
+#import "Parse/Parse.h"
+#import "loginpage.h"
+#import "MyTableController.h"
+
 
 @implementation beerAppDelegate
 
 @synthesize window = _window;
+//@synthesize barPlotViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   
+    
+    
+   //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //Override point for customization after application launch.
+    //self.window.backgroundColor = [UIColor whiteColor];
+    
+    //barPlotViewController = [[BarPlotViewController alloc] init];
+    //[self.window setRootViewController:barPlotViewController];
+    //[self.window makeKeyAndVisible];
+    
+
     
     // This is the key info for parse.com
     [Parse setApplicationId:@"vzgdhTdNRBcaT5WDsQM7rz2OyAHAGbwLfdxz4lap" 
@@ -26,6 +41,18 @@
      [Parse setFacebookApplicationId:@"232190216866063"];
     
     
+    // Register for push notifications
+    [application registerForRemoteNotificationTypes: 
+     UIRemoteNotificationTypeBadge |
+     UIRemoteNotificationTypeAlert |             
+     UIRemoteNotificationTypeSound];
+    
+   // PFQueryTableViewController *controller = [[PFQueryTableViewController alloc] initWithClassName:@"todo"];
+    
+   // self.window.rootViewController = controller;
+  //  [self.window makeKeyAndVisible];
+    
+    
      // Override point for customization after application launch.
     //self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[UIViewController alloc] init]];
     //self.window.backgroundColor = [UIColor whiteColor];
@@ -33,6 +60,29 @@
     
     return YES;
 }
+
+
+- (void)application:(UIApplication *)application 
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken
+{
+    [PFPush storeDeviceToken:newDeviceToken]; // Send parse the device token
+    // Subscribe this user to the broadcast channel, "" 
+    [PFPush subscribeToChannelInBackground:@"" block:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Successfully subscribed to the broadcast channel.");
+        } else {
+            NSLog(@"Failed to subscribe to the broadcast channel.");
+        }
+    }];
+}
+
+
+- (void)application:(UIApplication *)application 
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
+
 
 // ****************************************************************************
 // App switching methods to support Facebook Single Sign-On

@@ -10,25 +10,57 @@
 //#import "beerAppDelegate.h"
 #import "beerViewController.h"
 #import "Parse/Parse.h"
+#import "logindata.h"
 
 
 @implementation loginpage
-@synthesize activityIndicator;
-
+@synthesize shadowtest;
+//@synthesize activityIndicator;
 #pragma mark - View lifecycle
+
+
+
+
+
+
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    
+    
+    
     [super viewDidLoad];
     
-    
+    /*
     // Check if user is cached and linked to Facebook, if so, bypass login    
     if ([PFUser currentUser] && [[PFUser currentUser] hasFacebook]) 
     {
-        beerViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"beerview"];
+        logindata *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"logindata"];
         [self.navigationController pushViewController:controller animated:YES];
     }
+     */
+    
+    //detects users and takes them to the app
+    
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        // do stuff with the user
+        beerViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"beerview"];
+        [self.navigationController pushViewController:controller animated:YES];
+    } else {
+        // show the signup or login screen
+    }
+     
+    
+    shadowtest.layer.masksToBounds = NO;
+    shadowtest.layer.shadowOffset = CGSizeMake(10, 0);
+    shadowtest.layer.shadowRadius = 5;
+    shadowtest.layer.shadowOpacity = 2;
+    shadowtest.layer.shadowPath = [UIBezierPath bezierPathWithRect:shadowtest.bounds].CGPath;
+     
+     
 }
 
 
@@ -43,6 +75,8 @@
     [userlist setObject:(state.text) forKey:@"State"];
     [userlist setObject:(zipcode.text) forKey:@"ZipCode"];
     [userlist save]; 
+   
+    
 }
 
 #pragma mark - Login mehtods
@@ -59,17 +93,19 @@
      {
          //[activityIndicator stopAnimating]; // Hide loading indicator
          
+         
+         
          if (!user) {
              NSLog(@"Uh oh. The user cancelled the Facebook login.");
          } else if (user.isNew) {
              NSLog(@"User with facebook id %@ signed up and logged in!", user.facebookId);
-             [self.navigationController pushViewController:[beerViewController alloc] animated:YES];
+             [self.navigationController pushViewController:[logindata alloc] animated:YES];
          } else {
              NSLog(@"User with facebook id %@ logged in!", user.facebookId);
             // [self presentModalViewController:beerViewController animated:YES]
              
              
-             beerViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"beerview"];
+             logindata *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"logindata"];
              [self.navigationController pushViewController:controller animated:YES];
              
          }
@@ -81,6 +117,14 @@
 
 
 
+
+
+
+
+- (void)viewDidUnload {
+    [self setShadowtest:nil];
+    [super viewDidUnload];
+}
 @end
 
 

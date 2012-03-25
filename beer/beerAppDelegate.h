@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
+//#import "BarPlotViewController.h"
 
 @interface beerAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) BarPlotViewController *barPlotViewController;
 
 @end
